@@ -1,0 +1,12 @@
+<% wrap_layout :inner do %>
+  <% content_for :sidebar do %>
+    <h2>Docs</h2>
+    <ul>
+      <li>
+        <h4>Builders</h4>
+      </li>
+      <li><a href="/docs/builders/alicloud.html">Alicloud</a></li>
+    </ul>
+  <% end %>
+  <%= yield %>
+<% end %>
