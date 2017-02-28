@@ -134,8 +134,6 @@ builder.
 
 -   `temporary_key_pair_name` (string) The name of the temporary key pair to generate. By default, Packer generates a name that looks like packer_<UUID>, where <UUID> is a 36 character unique identifier.
 
--   `windows_password_timeout` (string) The timeout for waiting for a Windows password for Windows instances. Defaults to 20 minutes.
-
 
 ## Basic Example
 
@@ -153,7 +151,7 @@ Here is a basic example for Alicloud.
     "secret_key":"{{user `secret_key`}}",
     "region":"cn-beijing",
     "image_name":"packer_test2",
-    "source_image":"centos7u2_64_40G_cloudinit_20160728.raw",
+    "source_image":"centos_7_2_64_40G_base_20170222.vhd",
     "ssh_username":"root",
     "instance_type":"ecs.n1.tiny",
     "io_optimized":"true",
