@@ -7,9 +7,9 @@ page_title: Alicloud Image Builder
 
 # Alicloud Image Builder
 
-Type: `alicloud`
+Type: `alicloud-ecs`
 
-Alicloud Packer builder plugin provide the capability to build  customized images based on the existing base images.
+Alicloud Packer builder plugin provide the capability to build  customized images based on an existing base images.
 
 ## Configuration Reference
 
@@ -146,7 +146,7 @@ Here is a basic example for Alicloud.
     "secret_key": "{{env `ALICLOUD_SECRET_KEY`}}"
   },
   "builders": [{
-    "type":"alicloud",
+    "type":"alicloud-ecs",
     "access_key":"{{user `access_key`}}",
     "secret_key":"{{user `secret_key`}}",
     "region":"cn-beijing",
